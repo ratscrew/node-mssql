@@ -20,7 +20,7 @@ export const map: SqlTypeMap;
  * @fires Connection#close
  * @fires Connection#error
  */
-export class Connection extends EventEmitter {
+export class ConnectionPool extends EventEmitter {
     /** If true, connection is established. */
     connected: boolean;
     /** If true, connection is being established. */
